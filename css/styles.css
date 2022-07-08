@@ -275,7 +275,7 @@ button:hover {
   background-color: var(--footer-bg-cl);
 }
 
-.hero-overlay {
+.hero--overlay {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -290,7 +290,7 @@ button:hover {
   background-position: center;
 }
 
-.hero-title {
+.hero__title {
   max-width: 696px;
   margin: 0px auto;
 
@@ -303,7 +303,7 @@ button:hover {
   color: var(--main-bg-cl);
 }
 
-.hero-btn {
+.hero__btn {
   display: block;
   margin-top: 30px;
   margin-left: auto;
@@ -324,25 +324,25 @@ button:hover {
   transition: background-color var(--transition-d) var(--transition-t-f);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: var(--hero-btn-cl);
 }
 /* секція features / особености */
-.features-list {
+.features__list {
   display: flex;
 }
 
-.features-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.features-item {
+.features__item {
   flex-basis: calc((100% - 90px) / 4);
   max-width: 270px;
 }
 
-.features-icon-wrap {
+.features__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features__icon-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -354,7 +354,7 @@ button:hover {
   border-radius: 4px;
 }
 
-.features-name {
+.features__name {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -364,9 +364,9 @@ button:hover {
   color: var(--secondary-cl);
 }
 /* заголовок секцій direction & team */
-.direction-title,
-.team-title,
-.clients-title {
+.direction__title,
+.team__title,
+.clients__title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -380,19 +380,19 @@ button:hover {
   padding-top: 0px;
 }
 
-.direction-list {
+.direction__list {
   display: flex;
 }
 
-.direction-item:not(:last-child) {
+.direction__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.direction-item-inner {
+.direction__item-inner {
   position: relative;
 }
 
-.direction-desc {
+.direction__desc {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -416,7 +416,7 @@ button:hover {
   background-color: var(--team-bg-cl);
 }
 
-.team-list {
+.team__list {
   display: flex;
 }
 
@@ -434,26 +434,26 @@ button:hover {
   margin-right: 30px;
 }
 
-.team-box {
+.team__box {
   padding: 30px 32px;
 }
 
-.team-name,
-.team-text {
+.team__name,
+.team__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
 }
 
-.team-name {
+.team__name {
   margin-bottom: 10px;
 
   font-weight: 500;
   color: var(--secondary-cl);
 }
 
-.team-text {
+.team__text {
   margin-bottom: 16px;
 }
 
@@ -471,16 +471,16 @@ button:hover {
   display: flex;
 }
 
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
 }
 
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -495,14 +495,14 @@ button:hover {
     border var(--transition-d) var(--transition-t-f);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   color: var(--accent-cl);
 
   border: 1px solid var(--accent-cl);
 }
 
-.clients-icon {
+.clients__icon {
   fill: currentColor;
 }
 /* блок main - index.hmtl (end) */
@@ -556,15 +556,13 @@ button:hover {
   color: var(--main-bg-cl);
 }
 
-
-
 .footer-form {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer-form input {
+.footer-form__input {
   display: flex;
   align-items: center;
   width: 358px;
@@ -585,7 +583,7 @@ button:hover {
   padding: 15px 295px 15px 16px;
 } */
 
-.footer-mail-btn {
+.footer-mail__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -608,7 +606,7 @@ button:hover {
   border-radius: 4px;
 }
 
-.footer-mail-icon {
+.footer-mail__icon {
   fill: currentColor;
 }
 /* блок footer (end) */
@@ -653,7 +651,7 @@ button:hover {
   transform: translate(-50%, -50%) scaleX(1.2);
 }
 
-.modal-close-btn {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -671,13 +669,13 @@ button:hover {
   border-radius: 50%;
 }
 
-.modal-close-icon {
+.modal__close-icon {
   fill: var(--dark-lg-cl);
   transition: fill var(--transition-d) var(--transition-t-f);
 }
 
-.modal-close-btn:hover .modal-close-icon,
-.modal-close-btn:focus .modal-close-icon {
+.modal__close-btn:hover .modal__close-icon,
+.modal__close-btn:focus .modal__close-icon {
   fill: var(--accent-cl);
 }
 
@@ -688,7 +686,7 @@ button:hover {
   padding: 40px;
 }
 
-.modal-form-title {
+.modal-form__title {
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -698,14 +696,18 @@ button:hover {
   color: var(--secondary-cl);
 }
 
-.modal-form-field {
+.modal-form__field {
   position: relative;
   margin-bottom: 10px;
 
   transition: border var(--transition-d) var(--transition-t-f);
 }
 
-.modal-form-lable {
+.modal-form__field--textarea {
+  margin-bottom: 20px;
+}
+
+.modal-form__lable {
   display: block;
   margin-bottom: 4px;
 
@@ -714,7 +716,7 @@ button:hover {
   letter-spacing: 0.01em;
 }
 
-.modal-form-field input {
+.modal-form__input {
   width: 448px;
   height: 40px;
   padding: 0 0 0 42px;
@@ -723,16 +725,12 @@ button:hover {
   border-radius: 4px;
 }
 
-.modal-form-field input:focus,
-.modal-form-textarea textarea:focus {
+.modal-form__input:focus,
+.modal-form__textarea:focus {
   border: 1px solid var(--accent-cl);
 }
 
-.modal-form-field input:focus + .modal-icon {
-  fill: var(--accent-cl);
-}
-
-.modal-icon {
+.modal-form__icon {
   position: absolute;
   bottom: 11px;
   left: 12px;
@@ -741,13 +739,11 @@ button:hover {
   transition: fill var(--transition-d) var(--transition-t-f);
 }
 
-.modal-form-textarea {
-  margin-bottom: 20px;
-
-  transition: border var(--transition-d) var(--transition-t-f);
+.modal-form__input:focus + .modal-form__icon {
+  fill: var(--accent-cl);
 }
 
-.modal-form-textarea textarea {
+.modal-form__textarea {
   display: block;
   width: 448px;
   height: 120px;
@@ -758,7 +754,7 @@ button:hover {
   border-radius: 4px;
 }
 
-.modal-form textarea::placeholder {
+.modal-form__textarea::placeholder {
   font-size: 12px;
   letter-spacing: 0.01em;
   color: var(--modal-form-placeholder-cl);
@@ -770,13 +766,13 @@ button:hover {
   align-items: center;
 }
 
-.modal-policy label {
+/* .modal-policy label {
   margin-bottom: 0px;
 
   font-size: 12px;
   letter-spacing: 0.01em;
   line-height: 1.71;
-}
+} */
 
 .modal-policy input {
   width: 16px;
@@ -784,21 +780,11 @@ button:hover {
   margin-right: 7px;
 }
 
-.modal-policy a {
+.modal-policy__link {
   color: var(--accent-cl);
 }
 
-.modal-policy-icon {
-  order: -1;
-
-  margin-right: 7px;
-
-  border: 1px solid var(--dark-lg-cl);
-  border-radius: 2px;
-  box-shadow: 0px 4px 4px var(--modal-checkbox-bsh);
-}
-
-.modal-policy-checkbox {
+.modal-policy__checkbox {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -811,13 +797,23 @@ button:hover {
   margin: -1px;
 }
 
-.modal-policy-checkbox:checked + .modal-policy-icon{
+.modal-policy__checkbox:checked + .modal-policy__icon{
   background-color: var(--accent-cl);
   border: 1px solid var(--accent-cl);
   box-shadow: none;
 }
 
-.modal-submit-btn {
+.modal-policy__icon {
+  order: -1;
+
+  margin-right: 7px;
+
+  border: 1px solid var(--dark-lg-cl);
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px var(--modal-checkbox-bsh);
+}
+
+.modal__submit-btn {
   padding: 10px 55px 10px 56px;
   margin: 30px auto 0;
   
@@ -834,24 +830,24 @@ button:hover {
   transition: background-color var(--transition-d) var(--transition-t-f);
 }
 
-.modal-submit-btn:hover {
+.modal__submit-btn:hover {
   background-color: var(--hero-btn-cl);
 }
 /* modal (end) */
 
 /* блок main - portfolio.hmtl (start) */
 /* секція portfolio / портфоліо */
-.filter-list {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-btn {
+.filter__btn {
   padding: 6px 22px;
 
   font-family: inherit;
@@ -869,9 +865,9 @@ button:hover {
     box-shadow var(--transition-d) var(--transition-t-f);
 }
 
-.filter-btn:hover,
-.filter-btn:focus,
-.filter-btn:active {
+.filter__btn:hover,
+.filter__btn:focus,
+.filter__btn:active {
   color: var(--main-bg-cl);
 
   background-color: var(--accent-cl);
@@ -881,44 +877,44 @@ button:hover {
 }
 
 /* список проектів */
-.project-list {
+.projects {
   display: flex;
   flex-wrap: wrap;
 }
 
-.project-item {
+.projects__item {
   flex-basis: calc((100% - 2 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.project-item:nth-child(3n) {
+.projects__item:nth-child(3n) {
   margin-right: 0px;
 }
 
-.project-item:nth-last-child(-n + 3) {
+.projects__item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
 
-.project-link {
+.projects__link {
   display: block;
 
   transition: box-shadow var(--transition-d) var(--transition-t-f);
 }
 
-.project-link:hover,
-.project-link:focus {
+.projects__link:hover,
+.projects__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-img-wrap {
+.projects__img-wrap {
   position: relative;
   overflow: hidden;
 }
 
-.project-desc {
+.projects__desc {
   position: absolute;
   top: 0;
   left: 0;
@@ -939,18 +935,18 @@ button:hover {
   transition: transform var(--transition-d) var(--transition-t-f);
 }
 
-.project-link:hover .project-desc {
+.projects__link:hover .projects__desc {
   transform: translateY(0);
 }
 
-.project-box {
+.projects__box {
   padding: 20px 24px;
   
   border: 1px solid var(--project-item-cl);
   border-top: none;
 }
 
-.project-title {
+.projects__title {
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -960,7 +956,7 @@ button:hover {
   color: var(--secondary-cl);
 }
 
-.project-tag {
+.projects__tag {
   font-size: 16px;
   line-height: 1.88;
   color: var(--main-cl);

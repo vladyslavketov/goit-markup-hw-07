@@ -10,3 +10,31 @@ $accent__cl: #2196F3;
 
 /* transition */
 $main__transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+/* лого (start) */
+$logo__dark: #000000;
+$logo__light: #ffffff;
+/* лого (end) */
+
+
+/* блок header (start) */
+$header__border-cl: #ECECEC;
+/* блок header (end) */
+
+/* блок footer (start) */
+$footer__bg-cl: #2F303A;
+$footer__title-cl: #ffffff;
+$footer-contacts__link-cl: rgba(255, 255, 255, 0.6);
+$footer-contacts__location-cl: #ffffff;
+$footer__input-cl: rgba(255, 255, 255, 0.6);
+$footer__input-border-cl: rgba(255, 255, 255, 0.3);
+$footer__input-dsh-cl: rgba(0, 0, 0, 0.15);
+/* блок footer (end) */
+
+/* блок hero (start) */
+$hero__bg-cl: #C4C4C4;
+$hero__overlay-cl: rgba(47, 48, 58, 0.4);
+$hero__title-cl: #ffffff;
+
+$hero__btn-cl: #188CE8;
+/* блок hero (end) */

@@ -161,10 +161,7 @@ button:hover {
 }
 
 .logo:hover,
-.logo:focus {
-  color: var(--accent-cl);
-}
-
+.logo:focus,
 .logo--accent {
   color: var(--accent-cl);
 }
@@ -209,11 +206,7 @@ button:hover {
 }
 
 .site-nav__link:hover,
-.site-nav__link:focus {
-  color: var(--accent-cl);
-}
-
-/* активна сторінка */
+.site-nav__link:focus,
 .site-nav__link--current {
   color: var(--accent-cl);
 }
@@ -252,7 +245,7 @@ button:hover {
   letter-spacing: 0.02em;
   color: var(--main-cl);
 
-  transition: background-color var(--transition-d) var(--transition-t-f);
+  transition: color var(--transition-d) var(--transition-t-f);
 }
 
 .header-contacts__link:hover,

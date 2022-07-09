@@ -43,16 +43,16 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--main-bg-cl);
+  color: $btn__text-cl;
 
-  background-color: var(--accent-cl);
-  box-shadow: 0px 4px 4px var(--footer-form-drop-shadow);
+  background-color: $accent__cl;
+  box-shadow: 0px 4px 4px $hero__btn-dsh-cl;
   border-radius: 4px;
   border-width: 0px;
-  transition: background-color var(--transition-d) var(--transition-t-f);
+  transition: background-color $main__transition;
 }
 
 .hero__btn:hover,
 .hero__btn:focus {
-  background-color: var(--hero-btn-cl);
+  background-color: $hero__btn-cl;
 }

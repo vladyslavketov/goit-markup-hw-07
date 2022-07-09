@@ -21,7 +21,7 @@
 
 .footer-contacts__link {
   font-style: normal;
-  color: $footer-cont__link-cl;
+  color: $footer-contacts__link-cl;
 
   transition: color $main__transition;
 }
@@ -46,6 +46,11 @@
   color: $footer__title-cl;
 }
 
+.footer__socials-link {
+  color: $footer__socials-cl;
+  background-color: $footer__socials-bg-cl;
+}
+
 .footer-form {
   display: flex;
   justify-content: center;
@@ -59,12 +64,12 @@
   height: 50px;
   padding: 0 16px;
 
-  color: $footer-form__input-cl;
+  color: $footer__input-cl;
   font-size: 16px;
   line-height: 1.25;
 
   background-color: inherit;
-  border: 1px solid $footer-form__input-border-cl;
+  border: 1px solid $footer__input-border-cl;
   filter: drop-shadow(0px 4px 4px $footer__input-dsh-cl);
   border-radius: 4px;
 }
@@ -79,16 +84,16 @@
   margin-left: 10px;
   padding: 10px 28px 10px 29px;
 
-  color: var(--main-bg-cl);
+  color: $btn__text-cl;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.06em;
   text-align: center;
 
-  background-color: var(--accent-cl);
+  background-color: $accent__cl;
   border: 0;
-  box-shadow: 0px 4px 4px var(--footer-form-drop-shadow);
+  box-shadow: 0px 4px 4px $footer__input-bsh-cl;
   border-radius: 4px;
 }
 

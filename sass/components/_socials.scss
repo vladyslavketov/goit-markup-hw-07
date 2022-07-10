@@ -4,10 +4,12 @@
   align-items: center;
   width: 206px;
   height: 44px;
-}
+} 
 
-.socials__item:not(:last-child) {
-  margin-right: 10px;
+.socials__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .socials__link {
@@ -19,16 +21,25 @@
 
   border-radius: 50px;
   transition: color $main__transition,
-  background-color $main__transition;
-}
+    background-color $main__transition;
 
-.socials__link:hover,
-.socials__link:focus {
-  color: $main__bg-cl;
-
-  background-color: $accent__cl;
+  &:hover,
+  &:focus {
+    color: $main__bg-cl;
+  
+    background-color: $accent__cl;
+  }
 }
 
 .socials__icon {
   fill: currentColor;
+}
+
+.team__socials-link {
+  color: $team__socials-cl;
+}
+
+.footer__socials-link {
+  color: $footer__socials-cl;
+  background-color: $footer__socials-bg-cl;
 }

@@ -12,11 +12,6 @@ $btn__text-cl: #ffffff;
 /* transition */
 $main__transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-/* others */
-$items: 3;
-$indent: 30px;
-$card-set__gap: 30px;
-
 /* лого (start) */
 $logo__dark: #000000;
 $logo__light: #ffffff;
@@ -41,7 +36,8 @@ $footer__input-bsh-cl: rgba(0, 0, 0, 0.15);
 /* блок footer (end) */
 
 /* блок hero (start) */
-$hero__bg-cl: #C4C4C4;
+$hero__bg-cl: #2F303A;
+$hero--overlay-bg-cl: #C4C4C4;
 $hero__overlay-cl: rgba(47, 48, 58, 0.4);
 $hero__title-cl: #ffffff;
 

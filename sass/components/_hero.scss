@@ -2,7 +2,7 @@
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: var(--footer-bg-cl);
+  background-color: $hero__bg-cl;
 }
 
 .hero--overlay {
@@ -11,7 +11,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  background-color: $hero__bg-cl;
+  background-color: $hero--overlay-bg-cl;
   background-image: linear-gradient($hero__overlay-cl, $hero__overlay-cl),
     url('../images/hero-bg-img.jpg');
   background-repeat: no-repeat;
@@ -50,9 +50,9 @@
   border-radius: 4px;
   border-width: 0px;
   transition: background-color $main__transition;
-}
 
-.hero__btn:hover,
-.hero__btn:focus {
-  background-color: $hero__btn-cl;
+  &:hover,
+  &:focus {
+    background-color: $hero__btn-cl;
+  }
 }

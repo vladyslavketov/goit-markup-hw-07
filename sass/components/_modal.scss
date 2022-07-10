@@ -58,11 +58,11 @@
 .modal__close-icon {
   fill: $modal__dark-cl;
   transition: fill $main__transition;
-}
 
-.modal__close-btn:hover .modal__close-icon,
-.modal__close-btn:focus .modal__close-icon {
-  fill: $accent__cl;
+  .modal__close-btn:hover &,
+  .modal__close-btn:focus & {
+    fill: $accent__cl;
+  }
 }
 
 .modal-form {
@@ -87,10 +87,10 @@
   margin-bottom: 10px;
 
   transition: border $main__transition;
-}
 
-.modal-form__field--textarea {
-  margin-bottom: 20px;
+  &--textarea {
+    margin-bottom: 20px;
+  }
 }
 
 .modal-form__lable {
@@ -109,11 +109,10 @@
 
   border: 1px solid $modal-form-border-cl;
   border-radius: 4px;
-}
 
-.modal-form__input:focus,
-.modal-form__textarea:focus {
-  border: 1px solid $accent__cl;
+  &:focus {
+    border: 1px solid $accent__cl;
+  }
 }
 
 .modal-form__icon {
@@ -123,10 +122,10 @@
   fill: $secondary__cl;
 
   transition: fill $main__transition;
-}
 
-.modal-form__input:focus+.modal-form__icon {
-  fill: $accent__cl;
+  .modal-form__input:focus + & {
+    fill: $accent__cl;
+  }
 }
 
 .modal-form__textarea {
@@ -138,13 +137,17 @@
 
   border: 1px solid $modal-form-border-cl;
   border-radius: 4px;
-}
 
-.modal-form__textarea::placeholder {
-  font-size: 12px;
-  line-height: 1.167;
-  letter-spacing: 0.01em;
-  color: $modal-form-placeholder-cl;
+  &:focus {
+    border: 1px solid $accent__cl;
+  }
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.01em;
+    color: $modal-form-placeholder-cl;
+  }
 }
 
 .modal-policy {
@@ -152,14 +155,6 @@
   justify-content: center;
   align-items: center;
 }
-
-/* .modal-policy label {
-  margin-bottom: 0px;
-
-  font-size: 12px;
-  letter-spacing: 0.01em;
-  line-height: 1.71;
-} */
 
 .modal-policy__link {
   color: $accent__cl;
@@ -179,11 +174,11 @@
   margin-right: 7px;
 }
 
-.modal-policy__checkbox:checked+.modal-policy__icon {
-  background-color: $accent__cl;
-  border: 1px solid $accent__cl;
-  box-shadow: none;
-}
+// .modal-policy__checkbox:checked + .modal-policy__icon {
+//   background-color: $accent__cl;
+//   border: 1px solid $accent__cl;
+//   box-shadow: none;
+// }
 
 .modal-policy__icon {
   order: -1;
@@ -193,6 +188,12 @@
   border: 1px solid $modal__dark-cl;
   border-radius: 2px;
   box-shadow: 0px 4px 4px $modal-checkbox-bsh;
+
+  .modal-policy__checkbox:checked + & {
+    background-color: $accent__cl;
+    border: 1px solid $accent__cl;
+    box-shadow: none;
+  }
 }
 
 .modal__submit-btn {
@@ -210,8 +211,8 @@
   border-radius: 4px;
   border-width: 0px;
   transition: background-color $main__transition;
-}
 
-.modal__submit-btn:hover {
-  background-color: $modal__btn-cl;
+  &:hover {
+    background-color: $modal__btn-cl;
+  }
 }

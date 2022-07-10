@@ -7,12 +7,12 @@
   line-height: 1.19;
 
   transition: color $main__transition;
-}
 
-.logo:hover,
-.logo:focus,
-.logo--accent {
-  color: $accent__cl;
+  &:hover,
+  &:focus,
+  &--accent {
+    color: $accent__cl;
+  }
 }
 
 .page-header__logo {

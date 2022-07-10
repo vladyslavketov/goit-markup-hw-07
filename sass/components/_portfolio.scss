@@ -1,11 +1,8 @@
 .filter {
-  display: flex;
+  @include cardSet (8px);
+
   justify-content: center;
   margin-bottom: 50px;
-}
-
-.filter__item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .filter__btn {
@@ -24,50 +21,38 @@
   transition: color $main__transition,
     background-color $main__transition,
     box-shadow $main__transition;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $main__bg-cl;
+  
+    background-color: $accent__cl;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+      0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
-.filter__btn:hover,
-.filter__btn:focus,
-.filter__btn:active {
-  color: $main__bg-cl;
-
-  background-color: $accent__cl;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+.projects {
+  @include cardSet();
 }
 
-/* список проектів */
-// .projects {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
-
-// .projects__item {
-//   flex-basis: calc((100% - 2 * 30px) / 3);
-//   margin-right: 30px;
-//   margin-bottom: 30px;
-// }
-
-// .projects__item:nth-child(3n) {
-//   margin-right: 0px;
-// }
-
-// .projects__item:nth-last-child(-n + 3) {
-//   margin-bottom: 0px;
-// }
+.projects__item {
+  @include cardSet__item();
+}
 
 .projects__link {
   display: block;
 
   transition: box-shadow $main__transition;
-}
 
-.projects__link:hover,
-.projects__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+      0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .projects__img-wrap {
@@ -94,10 +79,10 @@
   background-color: $project__overlay-cl;
   transform: translateY(100%);
   transition: transform $main__transition;
-}
 
-.projects__link:hover .projects__desc {
-  transform: translateY(0);
+  .projects__link:hover & {
+    transform: translateY(0);
+  }
 }
 
 .projects__box {

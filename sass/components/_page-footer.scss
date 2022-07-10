@@ -9,14 +9,17 @@
   align-items: baseline;
 }
 
-.page-footer__box--margin {
-  margin-left: 70px;
-  margin-right: auto;
+.page-footer__box {
+  &--margin {
+    margin-left: 70px;
+    margin-right: auto;
+  }
 }
 
-// footer контакти
-.footer-contacts__item:not(:last-child) {
-  margin-bottom: 9px;
+.footer-contacts__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+}
 }
 
 .footer-contacts__link {
@@ -24,11 +27,11 @@
   color: $footer-contacts__link-cl;
 
   transition: color $main__transition;
-}
 
-.footer-contacts__link:hover,
-.footer-contacts__link:focus {
-  color: $accent__cl;
+  &:hover,
+  &:focus {
+    color: $accent__cl;
+  }
 }
 
 .footer-contacts__location {
@@ -46,10 +49,10 @@
   color: $footer__title-cl;
 }
 
-.footer__socials-link {
-  color: $footer__socials-cl;
-  background-color: $footer__socials-bg-cl;
-}
+// .footer__socials-link {
+//   color: $footer__socials-cl;
+//   background-color: $footer__socials-bg-cl;
+// }
 
 .footer-form {
   display: flex;

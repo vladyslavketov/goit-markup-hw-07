@@ -8,17 +8,14 @@
   color: $secondary__cl;
 }
 
-.clients-list {
-  display: flex;
+.clients__list {
+  @include cardSet ();
 }
 
 .clients__item {
+  @include cardSet__item ($items: 6);
   width: 170px;
   height: 92px;
-}
-
-.clients__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .clients__link {
@@ -34,13 +31,14 @@
   border-radius: 4px;
   transition: color $main__transition,
     border $main__transition;
-}
 
-.clients__link:hover,
-.clients__link:focus {
-  color: $accent__cl;
 
-  border: 1px solid $accent__cl;
+  &:hover,
+  &:focus {
+    color: $accent__cl;
+
+    border: 1px solid $accent__cl;
+  }
 }
 
 .clients__icon {

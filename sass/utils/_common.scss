@@ -63,3 +63,15 @@ button:hover {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(-1 * #{$indent} / 2);
+  // gap: $card-set__gap;
+}
+
+.card-set__item {
+  margin: calc(#{$indent} / 2);
+  flex-basis: calc((#{100%} - #{$indent} * #{$items}) / #{$items});
+}

@@ -745,6 +745,7 @@ button:hover {
 
 .modal-form__input:focus {
   border: 1px solid #2196F3;
+  outline: none;
 }
 
 .modal-form__icon {
@@ -772,6 +773,7 @@ button:hover {
 
 .modal-form__textarea:focus {
   border: 1px solid #2196F3;
+  outline: none;
 }
 
 .modal-form__textarea::-webkit-input-placeholder {

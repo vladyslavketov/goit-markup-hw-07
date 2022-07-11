@@ -112,6 +112,7 @@
 
   &:focus {
     border: 1px solid $accent__cl;
+    outline: none;
   }
 }
 
@@ -140,6 +141,7 @@
 
   &:focus {
     border: 1px solid $accent__cl;
+    outline: none;
   }
 
   &::placeholder {
